@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#app{
+  background-image: url('./sunny-day.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s;
+}
+
+main {
+  min-height: 100vh;
+  padding: 25px;
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.40));
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  margin-bottom: 10px;
+
+  font-size: 20px;
+}
+
+.intro > p{
+  font-style: italic;
+}
+
+.search-box {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box .search-bar{
+  width: 50%;
+  padding: 15px;
+  font-size: 20px;
+  font-style: italic;
+
+  /* Outline none er så kanten ikke lyser blå når man skriver noget */
+  outline: none;
+  border: none;
+  
+  border-radius: 5px;
+}
+
+.location-box .location {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* .location-box .date {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+} */
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  display: inline-block;
+  color: white;
+  font-size: 100px;
+  font-weight: 500;
+
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 3px lightgray;
+  border-radius: 16px;
+  padding: 10px 20px;
+  margin: 20px 0;
+}
+
+.weather-box .weather {
+  font-size: 48px;
+  font-weight: 500;
+  font-style: italic;
+}
