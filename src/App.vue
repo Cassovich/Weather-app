@@ -15,7 +15,7 @@
             />
         </div>
 
-        <div class="weather-wrap" v-if="typeof weather.main != 'undefined'"> 
+        <div class="weather-wrap"> 
             <div class="location-box">
                 <div class="location">{{ weather.name }}</div>
                 <!-- <div class="date">Monday 20 January 2023</div> -->
